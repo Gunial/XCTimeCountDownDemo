@@ -34,6 +34,16 @@
     [self.view addSubview:self.forgetButton];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
 - (void)resetPasswordAction {
     FindPasswordViewController *findVc = [[FindPasswordViewController alloc] init];
     [self.navigationController pushViewController:findVc animated:YES];

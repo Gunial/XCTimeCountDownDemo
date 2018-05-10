@@ -64,7 +64,6 @@
     /*
      这里模拟一下请求后台的过程
      */
-    
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
                
         dispatch_async(dispatch_get_main_queue(), ^{

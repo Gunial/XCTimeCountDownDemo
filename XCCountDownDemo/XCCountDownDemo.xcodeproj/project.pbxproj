@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD5A500920A3E9360028A051 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5A500820A3E9360028A051 /* AppDelegate.m */; };
+		AD5A501120A3E9370028A051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD5A501020A3E9370028A051 /* Assets.xcassets */; };
+		AD5A501420A3E9370028A051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD5A501220A3E9370028A051 /* LaunchScreen.storyboard */; };
+		AD5A501720A3E9370028A051 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5A501620A3E9370028A051 /* main.m */; };
+		AD5A501F20A3E98B0028A051 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5A501E20A3E98B0028A051 /* LoginViewController.m */; };
+		AD5A502220A3E99E0028A051 /* FindPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5A502120A3E99E0028A051 /* FindPasswordViewController.m */; };
+		AD5A502520A3EA9B0028A051 /* LoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5A502420A3EA9B0028A051 /* LoginTextField.m */; };
+		AD5A502820A3EF390028A051 /* ForgetTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5A502720A3EF390028A051 /* ForgetTextField.m */; };
+		AD5A502B20A3EFD90028A051 /* UIView+XCCore.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5A502A20A3EFD90028A051 /* UIView+XCCore.m */; };
+		AD5A502E20A3F2660028A051 /* XCTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5A502D20A3F2650028A051 /* XCTimerManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AD5A500420A3E9360028A051 /* XCCountDownDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCCountDownDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD5A500720A3E9360028A051 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD5A500820A3E9360028A051 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD5A501020A3E9370028A051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD5A501320A3E9370028A051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD5A501520A3E9370028A051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD5A501620A3E9370028A051 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD5A501D20A3E98B0028A051 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		AD5A501E20A3E98B0028A051 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		AD5A502020A3E99E0028A051 /* FindPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPasswordViewController.h; sourceTree = "<group>"; };
+		AD5A502120A3E99E0028A051 /* FindPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindPasswordViewController.m; sourceTree = "<group>"; };
+		AD5A502320A3EA9B0028A051 /* LoginTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTextField.h; sourceTree = "<group>"; };
+		AD5A502420A3EA9B0028A051 /* LoginTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTextField.m; sourceTree = "<group>"; };
+		AD5A502620A3EF380028A051 /* ForgetTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetTextField.h; sourceTree = "<group>"; };
+		AD5A502720A3EF390028A051 /* ForgetTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetTextField.m; sourceTree = "<group>"; };
+		AD5A502920A3EFD90028A051 /* UIView+XCCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XCCore.h"; sourceTree = "<group>"; };
+		AD5A502A20A3EFD90028A051 /* UIView+XCCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XCCore.m"; sourceTree = "<group>"; };
+		AD5A502C20A3F2650028A051 /* XCTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTimerManager.h; sourceTree = "<group>"; };
+		AD5A502D20A3F2650028A051 /* XCTimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTimerManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD5A500120A3E9360028A051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD5A4FFB20A3E9360028A051 = {
+			isa = PBXGroup;
+			children = (
+				AD5A500620A3E9360028A051 /* XCCountDownDemo */,
+				AD5A500520A3E9360028A051 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD5A500520A3E9360028A051 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD5A500420A3E9360028A051 /* XCCountDownDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD5A500620A3E9360028A051 /* XCCountDownDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AD5A501D20A3E98B0028A051 /* LoginViewController.h */,
+				AD5A501E20A3E98B0028A051 /* LoginViewController.m */,
+				AD5A502020A3E99E0028A051 /* FindPasswordViewController.h */,
+				AD5A502120A3E99E0028A051 /* FindPasswordViewController.m */,
+				AD5A502320A3EA9B0028A051 /* LoginTextField.h */,
+				AD5A502420A3EA9B0028A051 /* LoginTextField.m */,
+				AD5A502620A3EF380028A051 /* ForgetTextField.h */,
+				AD5A502720A3EF390028A051 /* ForgetTextField.m */,
+				AD5A502920A3EFD90028A051 /* UIView+XCCore.h */,
+				AD5A502A20A3EFD90028A051 /* UIView+XCCore.m */,
+				AD5A502C20A3F2650028A051 /* XCTimerManager.h */,
+				AD5A502D20A3F2650028A051 /* XCTimerManager.m */,
+				AD5A500720A3E9360028A051 /* AppDelegate.h */,
+				AD5A500820A3E9360028A051 /* AppDelegate.m */,
+				AD5A501020A3E9370028A051 /* Assets.xcassets */,
+				AD5A501220A3E9370028A051 /* LaunchScreen.storyboard */,
+				AD5A501520A3E9370028A051 /* Info.plist */,
+				AD5A501620A3E9370028A051 /* main.m */,
+			);
+			path = XCCountDownDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD5A500320A3E9360028A051 /* XCCountDownDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD5A501A20A3E9370028A051 /* Build configuration list for PBXNativeTarget "XCCountDownDemo" */;
+			buildPhases = (
+				AD5A500020A3E9360028A051 /* Sources */,
+				AD5A500120A3E9360028A051 /* Frameworks */,
+				AD5A500220A3E9360028A051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCCountDownDemo;
+			productName = XCCountDownDemo;
+			productReference = AD5A500420A3E9360028A051 /* XCCountDownDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD5A4FFC20A3E9360028A051 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Junial;
+				TargetAttributes = {
+					AD5A500320A3E9360028A051 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = AD5A4FFF20A3E9360028A051 /* Build configuration list for PBXProject "XCCountDownDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD5A4FFB20A3E9360028A051;
+			productRefGroup = AD5A500520A3E9360028A051 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD5A500320A3E9360028A051 /* XCCountDownDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD5A500220A3E9360028A051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD5A501420A3E9370028A051 /* LaunchScreen.storyboard in Resources */,
+				AD5A501120A3E9370028A051 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD5A500020A3E9360028A051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD5A501F20A3E98B0028A051 /* LoginViewController.m in Sources */,
+				AD5A502220A3E99E0028A051 /* FindPasswordViewController.m in Sources */,
+				AD5A502E20A3F2660028A051 /* XCTimerManager.m in Sources */,
+				AD5A501720A3E9370028A051 /* main.m in Sources */,
+				AD5A500920A3E9360028A051 /* AppDelegate.m in Sources */,
+				AD5A502820A3EF390028A051 /* ForgetTextField.m in Sources */,
+				AD5A502B20A3EFD90028A051 /* UIView+XCCore.m in Sources */,
+				AD5A502520A3EA9B0028A051 /* LoginTextField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AD5A501220A3E9370028A051 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD5A501320A3E9370028A051 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD5A501820A3E9370028A051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD5A501920A3E9370028A051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD5A501B20A3E9370028A051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M9352RRVM;
+				INFOPLIST_FILE = XCCountDownDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.junial.XCCountDownDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AD5A501C20A3E9370028A051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M9352RRVM;
+				INFOPLIST_FILE = XCCountDownDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.junial.XCCountDownDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD5A4FFF20A3E9360028A051 /* Build configuration list for PBXProject "XCCountDownDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD5A501820A3E9370028A051 /* Debug */,
+				AD5A501920A3E9370028A051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD5A501A20A3E9370028A051 /* Build configuration list for PBXNativeTarget "XCCountDownDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD5A501B20A3E9370028A051 /* Debug */,
+				AD5A501C20A3E9370028A051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD5A4FFC20A3E9360028A051 /* Project object */;
+}

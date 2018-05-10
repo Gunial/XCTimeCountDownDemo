@@ -25,5 +25,7 @@
 + (instancetype)sharedTimerManager;
 /* 倒计时方法 */
 - (void)countDown;
+/* 取消倒计时 */
+- (void)cancel;
 
 @end

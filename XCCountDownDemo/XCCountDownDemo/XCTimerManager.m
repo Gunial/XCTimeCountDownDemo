@@ -11,6 +11,9 @@
 #define kMaxCountDownTime           60
 
 @implementation XCTimerManager
+{
+    dispatch_source_t _currentTimer;
+}
 
 + (instancetype)sharedTimerManager {
     static XCTimerManager *_instance;
@@ -24,6 +27,7 @@
 - (void)countDown {
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_source_t _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    _currentTimer = _timer;
     dispatch_source_set_timer(_timer, dispatch_walltime(NULL, 0), 1.0 * NSEC_PER_SEC, 0);
     
     NSTimeInterval seconds = kMaxCountDownTime;
@@ -43,6 +47,12 @@
         }
     });
     dispatch_resume(_timer);
+}
+
+- (void)cancel {
+    dispatch_source_cancel(_currentTimer);
+    _timeout = 0;
+    NSLog(@"取消倒计时");
 }
 
 @end

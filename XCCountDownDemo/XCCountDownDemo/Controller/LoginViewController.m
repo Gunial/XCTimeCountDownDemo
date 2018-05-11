@@ -49,7 +49,6 @@
     [self.navigationController pushViewController:findVc animated:YES];
 }
 
-
 #pragma mark - getter
 
 - (UIImageView *)bgImageView {

@@ -11,6 +11,7 @@
 #import "UIView+XCCore.h"
 
 #import "XCTimerManager.h"
+#import "MBProgressHUD.h"
 
 @interface FindPasswordViewController ()<XCTimerManagerDelegate>
 
@@ -22,6 +23,8 @@
 @property (nonatomic, strong) UIButton *nextButton;
 /* 获取验证码按钮 */
 @property (nonatomic, strong) UIButton *codeButton;
+/** 取消倒计时 */
+@property (nonatomic, strong) UIButton *cancelButton;
 
 @end
 
@@ -38,6 +41,8 @@
     [self.view addSubview:self.phoneNumTextField];
     [self.view addSubview:self.codeTextField];
     [self.view addSubview:self.nextButton];
+    /* 提供一个取消按钮来取消倒计时,实际开发根据业务要求使用 */
+    [self.view addSubview:self.cancelButton];
     
     [XCTimerManager sharedTimerManager].delegate = self;
 }
@@ -51,37 +56,47 @@
      "获取验证码"按钮 会有一个 由"获取验证码" -> "重新发送" 的变化过程
      */
     XCTimerManager *manager = [XCTimerManager sharedTimerManager];
-    if (manager.timeout > 0) {
+    if (manager.leftTime > 0) {
         self.codeButton.enabled = NO;
         self.codeButton.backgroundColor = [UIColor lightGrayColor];
-        [self.codeButton setTitle:[NSString stringWithFormat:@"重新发送(%d]s)", manager.timeout] forState:UIControlStateNormal];
+        [self.codeButton setTitle:[NSString stringWithFormat:@"重新发送(%d]s)", manager.leftTime] forState:UIControlStateNormal];
     }
 }
 
 /* 点击获取验证码 */
 - (void)clickCodeButton {
     
-    /*
-     这里模拟一下请求后台的过程
-     */
+    /* 这里模拟一下请求后台的过程 */
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-               
+        [NSThread sleepForTimeInterval:1.0];
         dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
             self.codeButton.enabled = NO;
             self.codeButton.backgroundColor = [UIColor lightGrayColor];
-            [[XCTimerManager sharedTimerManager] countDown];
+            [[XCTimerManager sharedTimerManager] timeCountDown];
+//            [[XCTimerManager sharedTimerManager] countDownUseNSTimer];
         });
     });
+}
+
+
+/* 提供一个取消按钮来取消倒计时,实际开发根据业务要求使用 */
+- (void)cancelCountDown {
+    [[XCTimerManager sharedTimerManager] cancelTimer];
     
+    [self.codeButton setTitle:@"获取验证码" forState:UIControlStateNormal];
+    self.codeButton.backgroundColor = [UIColor orangeColor];
+    self.codeButton.enabled = YES;
 }
 
 - (void)dealloc {
     NSLog(@"%@ delloc", [self class]);
 }
 
-#pragma mark - XCCountdownManagerDelegate
+#pragma mark - XCTimerManagerDelegate
 
-- (void)xc_timeCountDown:(int)timeout {
+- (void)timerManagerCountDown:(int)timeout {
     
     dispatch_async(dispatch_get_main_queue(), ^{
         if (timeout > 0) { // 倒计时未结束
@@ -147,6 +162,19 @@
         _nextButton.layer.masksToBounds = YES;
     }
     return _nextButton;
+}
+
+- (UIButton *)cancelButton {
+    if (_cancelButton == nil) {
+        _cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_cancelButton setTitle:@"取消倒计时" forState:UIControlStateNormal];
+        [_cancelButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+        _cancelButton.titleLabel.font = [UIFont systemFontOfSize:15];
+        [_cancelButton sizeToFit];
+        _cancelButton.frame = CGRectMake((self.view.bounds.size.width - (_cancelButton.bounds.size.width+10))/2, CGRectGetMaxY(self.nextButton.frame) + 100, _cancelButton.bounds.size.width+10, _cancelButton.bounds.size.height+10);
+        [_cancelButton addTarget:self action:@selector(cancelCountDown) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _cancelButton;
 }
 
 @end

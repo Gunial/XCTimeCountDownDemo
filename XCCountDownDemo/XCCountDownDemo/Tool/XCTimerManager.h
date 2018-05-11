@@ -11,21 +11,27 @@
 
 @protocol XCTimerManagerDelegate<NSObject>
 
-- (void)xc_timeCountDown:(int)timeout;
+/* 返回剩余时间 */
+- (void)timerManagerCountDown:(int)timeout;
 
 @end
 
 @interface XCTimerManager : NSObject
 
-/* 倒计时剩余的时间 */
-@property (nonatomic, assign) __block int timeout;
 /* 代理 */
 @property (nonatomic, weak) id<XCTimerManagerDelegate> delegate;
+/* 倒计时剩余的时间 */
+@property (nonatomic, assign) int leftTime;
 /* 单例 */
 + (instancetype)sharedTimerManager;
+
 /* 倒计时方法 */
-- (void)countDown;
+- (void)timeCountDown;
+
+/* 使用NSTimer测试 (不推荐使用NSTimer) */
+- (void)countDownUseNSTimer;
+
 /* 取消倒计时 */
-- (void)cancel;
+- (void)cancelTimer;
 
 @end

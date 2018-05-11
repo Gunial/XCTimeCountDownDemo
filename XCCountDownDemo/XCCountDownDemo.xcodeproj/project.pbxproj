@@ -17,6 +17,7 @@
 		AD5A502820A3EF390028A051 /* ForgetTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5A502720A3EF390028A051 /* ForgetTextField.m */; };
 		AD5A502B20A3EFD90028A051 /* UIView+XCCore.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5A502A20A3EFD90028A051 /* UIView+XCCore.m */; };
 		AD5A502E20A3F2660028A051 /* XCTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5A502D20A3F2650028A051 /* XCTimerManager.m */; };
+		ADF481E820A5254F00E926C1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF481E620A5254F00E926C1 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		AD5A502A20A3EFD90028A051 /* UIView+XCCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XCCore.m"; sourceTree = "<group>"; };
 		AD5A502C20A3F2650028A051 /* XCTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTimerManager.h; sourceTree = "<group>"; };
 		AD5A502D20A3F2650028A051 /* XCTimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTimerManager.m; sourceTree = "<group>"; };
+		ADF481E620A5254F00E926C1 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		ADF481E720A5254F00E926C1 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,18 +74,11 @@
 		AD5A500620A3E9360028A051 /* XCCountDownDemo */ = {
 			isa = PBXGroup;
 			children = (
-				AD5A501D20A3E98B0028A051 /* LoginViewController.h */,
-				AD5A501E20A3E98B0028A051 /* LoginViewController.m */,
-				AD5A502020A3E99E0028A051 /* FindPasswordViewController.h */,
-				AD5A502120A3E99E0028A051 /* FindPasswordViewController.m */,
-				AD5A502320A3EA9B0028A051 /* LoginTextField.h */,
-				AD5A502420A3EA9B0028A051 /* LoginTextField.m */,
-				AD5A502620A3EF380028A051 /* ForgetTextField.h */,
-				AD5A502720A3EF390028A051 /* ForgetTextField.m */,
-				AD5A502920A3EFD90028A051 /* UIView+XCCore.h */,
-				AD5A502A20A3EFD90028A051 /* UIView+XCCore.m */,
-				AD5A502C20A3F2650028A051 /* XCTimerManager.h */,
-				AD5A502D20A3F2650028A051 /* XCTimerManager.m */,
+				ADF481E920A5258B00E926C1 /* Controller */,
+				ADF481EA20A5259C00E926C1 /* View */,
+				ADF481EC20A525B600E926C1 /* Category */,
+				ADF481EB20A525AC00E926C1 /* Tool */,
+				ADF481E520A5253600E926C1 /* MBProgressHUD */,
 				AD5A500720A3E9360028A051 /* AppDelegate.h */,
 				AD5A500820A3E9360028A051 /* AppDelegate.m */,
 				AD5A501020A3E9370028A051 /* Assets.xcassets */,
@@ -91,6 +87,55 @@
 				AD5A501620A3E9370028A051 /* main.m */,
 			);
 			path = XCCountDownDemo;
+			sourceTree = "<group>";
+		};
+		ADF481E520A5253600E926C1 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				ADF481E720A5254F00E926C1 /* MBProgressHUD.h */,
+				ADF481E620A5254F00E926C1 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		ADF481E920A5258B00E926C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD5A501D20A3E98B0028A051 /* LoginViewController.h */,
+				AD5A501E20A3E98B0028A051 /* LoginViewController.m */,
+				AD5A502020A3E99E0028A051 /* FindPasswordViewController.h */,
+				AD5A502120A3E99E0028A051 /* FindPasswordViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ADF481EA20A5259C00E926C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD5A502320A3EA9B0028A051 /* LoginTextField.h */,
+				AD5A502420A3EA9B0028A051 /* LoginTextField.m */,
+				AD5A502620A3EF380028A051 /* ForgetTextField.h */,
+				AD5A502720A3EF390028A051 /* ForgetTextField.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADF481EB20A525AC00E926C1 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				AD5A502C20A3F2650028A051 /* XCTimerManager.h */,
+				AD5A502D20A3F2650028A051 /* XCTimerManager.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		ADF481EC20A525B600E926C1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AD5A502920A3EFD90028A051 /* UIView+XCCore.h */,
+				AD5A502A20A3EFD90028A051 /* UIView+XCCore.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +211,7 @@
 				AD5A502220A3E99E0028A051 /* FindPasswordViewController.m in Sources */,
 				AD5A502E20A3F2660028A051 /* XCTimerManager.m in Sources */,
 				AD5A501720A3E9370028A051 /* main.m in Sources */,
+				ADF481E820A5254F00E926C1 /* MBProgressHUD.m in Sources */,
 				AD5A500920A3E9360028A051 /* AppDelegate.m in Sources */,
 				AD5A502820A3EF390028A051 /* ForgetTextField.m in Sources */,
 				AD5A502B20A3EFD90028A051 /* UIView+XCCore.m in Sources */,

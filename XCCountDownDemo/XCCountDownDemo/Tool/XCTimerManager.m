@@ -8,7 +8,7 @@
 
 #import "XCTimerManager.h"
 
-#define kMaxCountDownTime           10
+#define kMaxCountDownTime           30
 
 @implementation XCTimerManager
 {
